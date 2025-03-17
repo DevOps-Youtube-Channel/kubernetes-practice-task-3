@@ -1,0 +1,2 @@
+curl http://mid-term-f-sadatov.sts404.uz/load-capability
+{"cpus":"1","memorys":"0"}

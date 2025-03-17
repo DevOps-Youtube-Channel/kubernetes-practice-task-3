@@ -1,0 +1,4 @@
+kubectl get endpointslices -n exam-farrukh
+NAME                      ADDRESSTYPE   PORTS   ENDPOINTS                                  AGE
+my-app-cluster-ip-v7skd   IPv4          80      10.233.66.209,10.233.69.60,10.233.68.187   5m42s
+my-app-n24x8              IPv4          80      10.233.66.209,10.233.69.60,10.233.68.187   8m41s

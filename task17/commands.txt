@@ -1,0 +1,2 @@
+kubectl describe endpoints my-app -n exam-farrukh | awk '/Addresses:/ {print $2}'
+10.233.66.209,10.233.68.187,10.233.69.60

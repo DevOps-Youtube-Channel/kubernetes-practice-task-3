@@ -1,0 +1,4 @@
+kubectl expose deployment my-app --port 80 --target-port 80 -n exam-farrukh --name my-app-cluster-i
+curl http://mid-term-f-sadatov.sts404.uz/
+
+{"message":"Welcome to your Kubernetes Exam!"}

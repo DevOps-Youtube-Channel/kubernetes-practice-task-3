@@ -1,0 +1,4 @@
+kubectl create serviceaccount serviceaccount-my-app -n exam-farrukh
+kubectl create role pod-creator-lister --verb=list,create --resource=pods --namespace=exam-farrukh
+kubectl create rolebinding pod-creator-lister-binding --role=pod-creator-lister --serviceaccount=exam-farrukh:serviceaccount-my-app --namespace=exam-farrukh
+kubectl get role pod-creator-lister -n exam-farrukh -o yaml

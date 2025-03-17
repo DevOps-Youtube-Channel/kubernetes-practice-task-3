@@ -1,0 +1,3 @@
+kubectl describe pod my-app-5b786f844f-ntccp -n exam-farrukh
+
+Liveness:  http-get http://:80/health delay=5s timeout=1s period=10s #success=1 #failure=3

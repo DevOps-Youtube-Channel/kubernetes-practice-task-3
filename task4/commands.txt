@@ -1,0 +1,2 @@
+kubectl create deploy flask-app-deploy --image nvrbckdown/flask-app:p-v4 --replicas 1 --port 5000 -n exam-farrukh --dry-run=client -o yaml > flask-app-deployment.yaml
+kubectl get deploy -n exam-farrukh

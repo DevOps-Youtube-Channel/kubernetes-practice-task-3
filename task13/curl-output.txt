@@ -1,0 +1,3 @@
+curl http://37.27.12.106:30121/
+
+{"message":"Welcome to your Kubernetes Exam!"}

@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: flask-app-deploy
+  name: flask-app-deploy
+  namespace: exam-farrukh
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-app-deploy
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: flask-app-deploy
+    spec:
+      containers:
+      - image: nvrbckdown/flask-app:p-v4
+        name: flask-app
+        ports:
+        - containerPort: 5000

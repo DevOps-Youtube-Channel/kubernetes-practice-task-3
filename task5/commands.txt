@@ -1,0 +1,4 @@
+kubectl expose deployment flask-app-deploy --port 5000 --target-port 5000 --type NodePort -n exam-farrukh
+kubectl get svc -n exam-farrukh
+kubectl get nodes -o wide
+curl http://37.27.12.106:31322/practice
